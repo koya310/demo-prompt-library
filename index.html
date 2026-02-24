@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>業務効率化 プロンプトライブラリ 10本</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo-text">💡 プロンプトライブラリ</div>
+        <div class="author-credit">制作: UIUXデザイン × AI実装 | koya@irohani.tech</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>業務効率化 プロンプトライブラリ 10本</h1>
+      <p>全プロンプトをコピーして ChatGPT や Claude に貼り付けるだけ。10種の業務を自動化します。</p>
+      <div class="badges">
+        <div class="badge">✨ コピペ即使用</div>
+        <div class="badge">🎯 ChatGPT/Claude対応</div>
+        <div class="badge">⚡ 月30-40時間の削減</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section class="summary">
+    <div class="container">
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="summary-icon">📧</div>
+          <div class="summary-label">営業メール</div>
+          <div class="summary-effect">3時間 → 15分</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-icon">📋</div>
+          <div class="summary-label">議事録要約</div>
+          <div class="summary-effect">1時間 → 10分</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-icon">📱</div>
+          <div class="summary-label">SNS投稿</div>
+          <div class="summary-effect">30分 → 3-5分</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-icon">📊</div>
+          <div class="summary-label">サマリー作成</div>
+          <div class="summary-effect">4時間 → 30分</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prompts -->
+  <section class="prompts">
+    <div class="container">
+      <h2 class="section-title">10本のプロンプト</h2>
+      <p class="section-sub">各プロンプトを展開してコピーしてください</p>
+
+      <!-- Prompt 01 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">01</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">営業</div>
+            <div class="prompt-title">営業メール作成（クロスセル提案）</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>営業担当者・営業マネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>既存顧客への高品質な提案メールを短時間で作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># 営業メール作成プロンプト
+
+あなたは営業のプロフェッショナルです。以下の情報をもとに、
+既存顧客への「クロスセル提案メール」を作成してください。
+
+## 指定条件
+- 顧客名: [顧客名]
+- 顧客の現在の利用サービス: [現在のサービス]
+- 提案する新しいサービス/機能: [新しいサービス名]
+- 提案理由: [なぜこの顧客に提案するのか]
+- 関係期間: [取引年数・親密度]
+- メールのトーン: [親友的 / プロフェッショナル / フォーマル]
+
+## 要件
+1. 件名: 開封率が高い件名（20文字以内）
+2. 本文: 
+   - 導入: 日ごろのご利用感謝 + 顧客の状況理解の提示
+   - 本論: 新サービスの3つのメリット（顧客目線）
+   - CTA: 明確な次のアクション（デモ日程・資料請求等）
+   - クロージング: 親切・前向きな文調
+3. 長さ: 200-300字（モバイル読みやすく）
+
+## 出力形式
+---
+【件名】
+[件名]
+
+【本文】
+[メール本文]
+
+【次のアクション】
+[フォロー案]
+---
+
+さあ、上記条件で営業メールを作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 02 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">02</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">管理</div>
+            <div class="prompt-title">会議議事録の要約・アクション抽出</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>管理職・書記・プロジェクトマネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>長い議事録を整理し、決定事項とアクション項目を明確に</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># 会議議事録 要約・アクション抽出プロンプト
+
+あなたは会議の効率化コンサルタントです。
+以下の会議議事録をもとに、以下の3つを出力してください：
+
+## 出力内容
+1. 会議の目的・結論（3文以内）
+2. 決定事項（箇条書き）
+3. アクション項目表
+
+## 入力：会議議事録
+---
+[ここに議事録全文を貼り付ける]
+---
+
+## 出力形式
+
+### 1. 会議サマリー
+[3文以内で会議の結論をまとめる]
+
+### 2. 決定事項
+- [決定1]
+- [決定2]
+- [決定3]
+
+### 3. アクション表
+| No | アクション | 担当者 | 期限 | 優先度 |
+|:---|:---|:---|:---:|:---:|
+| 1 | [詳細] | [名前] | [日付] | 高/中/低 |
+
+## ルール
+- アクションは「〜する」という動詞形で明確に
+- 担当者不明は「[未定]」と記載
+- 優先度は議事録の文脈から判断
+- 期限が記載されていない場合は「確認待ち」と記入
+
+さあ、上記フォーマットで議事録を整理してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 03 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">03</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">HR</div>
+            <div class="prompt-title">求人票作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>採用担当者・人事マネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>明確で魅力的な求人票を効率よく作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># 求人票作成プロンプト
+
+あなたは採用支援のプロフェッショナルです。
+以下の情報をもとに、求人票を作成してください。
+
+## 入力情報
+- 職種: [例: カスタマーサクセスマネージャー]
+- 必須スキル: [例: CRM理解、顧客対応経験]
+- 優遇スキル: [例: データ分析、営業経験]
+- 給与帯: [例: 400-500万円]
+- 勤務地: [例: 東京都渋谷区、または全国リモート]
+- 雇用形態: [例: 正社員]
+- 会社の特徴: [例: 急成長SaaS企業、Bシーズ向け]
+- 募集背景: [例: 事業拡大に伴う増員、新チーム立ち上げ]
+
+## 要件
+1. 職務経歴書: 役割・期待される成果を明確に
+2. 魅力的な会社紹介: 3-5行で事業・価値観を表現
+3. 待遇・福利厚生: 給与・休暇・成長機会を記載
+4. 応募資格: 必須/優遇を分ける
+5. トーン: 親しみやすく、かつ専門的
+
+## 出力形式
+---
+【職種】
+[職種名]
+
+【職務経歴書】
+[詳細]
+
+【会社紹介】
+[魅力的な紹介]
+
+【給与・待遇】
+[詳細]
+
+【応募資格】
+【必須】
+- [スキル1]
+
+【優遇】
+- [スキル1]
+
+【応募方法】
+[次のステップ]
+---
+
+上記フォーマットで求人票を作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 04 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">04</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">SNS運用</div>
+            <div class="prompt-title">Instagram投稿文作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>SNS担当者・マーケター・インフルエンサー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>高いエンゲージメントを生むInstagram投稿を短時間で作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># Instagram投稿文作成プロンプト
+
+あなたはInstagramマーケターです。
+以下の条件で、高いエンゲージメントを生む投稿文を作成してください。
+
+## 入力情報
+- 投稿のテーマ: [例: 新商品紹介、ビハインドザシーンズ、HOW TO]
+- ターゲット層: [例: 20-30代女性、ビジネスパーソン]
+- 投稿の目的: [例: 認知拡大、商品購入、フォロー獲得]
+- 商品・サービスの特徴: [例: 無添加スキンケア、使用感が軽い]
+- ブランドトーン: [例: 親友的・カジュアル / 高級感・フォーマル]
+- ハッシュタグの数: [例: 15-20個]
+
+## 要件
+1. キャプション: 開始30文字で「つかみ」を作る
+2. ストーリーテリング: 共感を生む背景説明
+3. CTA: 「いいね・コメント・DM・保存」のどれかを促す
+4. 絵文字: 適度に使用（多すぎず、自然に）
+5. 改行: モバイル表示を考慮し、読みやすく
+6. ハッシュタグ: 関連度の高いタグを厳選
+
+## 出力形式
+---
+【キャプション】
+[投稿本文]
+
+【ハッシュタグ】
+#[ハッシュタグ1] #[ハッシュタグ2] ...
+
+【CTAの種類】
+[いいね / コメント / その他]
+---
+
+上記フォーマットでInstagram投稿を作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 05 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">05</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">SNS運用</div>
+            <div class="prompt-title">X/Twitter投稿文作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>SNS担当者・マーケター・起業家</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>バイラル性の高いツイートを短時間で作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># X/Twitter投稿文作成プロンプト
+
+あなたはTwitterマーケターです。
+以下の条件で、リツイート・いいね・リプライが多くなる投稿を作成してください。
+
+## 入力情報
+- 投稿のテーマ: [例: ビジネステクニック、業界ニュース、自分の気づき]
+- ターゲット層: [例: スタートアップ創業者、マーケター、エンジニア]
+- 投稿の目的: [例: 認知拡大、フォロー増加、議論喚起]
+- トーン: [例: ユーモア / 教育的 / 危機感 / 励まし]
+
+## 要件
+1. 文字数: 140文字程度（最大280文字、余白を活かす）
+2. 1行目: キャッチ性の高い第一行で視線をつかむ
+3. 要素: 数字・具体例・意外性のいずれか1つ以上
+4. 行動喚起: リプライ促進なら「〇〇してみた人いますか？」など
+5. 絵文字: 1-2個まで（邪魔にならないように）
+6. バリエーション: 3パターン作成する
+
+## 出力形式
+---
+【案1】
+[ツイート本文]
+
+【案2】
+[ツイート本文]
+
+【案3】
+[ツイート本文]
+
+【最もリツイートされやすい案】
+[選択理由]
+---
+
+上記フォーマットで3パターンのツイートを作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 06 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">06</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">SNS運用</div>
+            <div class="prompt-title">LinkedIn投稿文作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>営業職・経営者・コンサルタント・採用担当者</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>ビジネスリーチと信頼構築を同時に実現する投稿を作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># LinkedIn投稿文作成プロンプト
+
+あなたはLinkedInのビジネスマーケターです。
+以下の条件で、エンゲージメント率が高く、信頼を構築する投稿を作成してください。
+
+## 入力情報
+- 投稿のテーマ: [例: キャリア論、業界洞察、プロジェクト成果、学習成果]
+- ターゲット層: [例: HR採用担当者、経営幹部、同業界人材]
+- 投稿の目的: [例: 認知・信頼構築、採用、営業見込み客開拓]
+- 自分/企業のポジション: [例: 営業マネージャー、SaaS企業]
+
+## 要件
+1. 導入: ストーリー、気づき、問題提起で始まる（5-7行）
+2. 本論: 学習内容・解決策・具体例を3段落で展開
+3. クロージング: 「皆さんはどう思いますか？」など質問で終わる
+4. 要素: 数字・引用・自分の失敗体験を含める
+5. トーン: 親しみやすく、かつ専門的・誠実
+6. 長さ: 300-500字（段落分けで読みやすく）
+
+## 出力形式
+---
+【投稿本文】
+[詳細な投稿]
+
+【引用や注釈がある場合】
+[記載]
+
+【CTA（質問）】
+[質問内容]
+---
+
+上記フォーマットでLinkedin投稿を作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 07 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">07</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">CS</div>
+            <div class="prompt-title">FAQ作成（製品・サービス）</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>CS担当者・マーケター・プロダクトマネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>顧客の疑問に先回りして答える高質なFAQを構築</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># FAQ作成プロンプト（製品・サービス）
+
+あなたはカスタマーサクセスマネージャーです。
+以下の製品・サービスについて、よくある質問と回答を作成してください。
+
+## 入力情報
+- 製品名/サービス名: [例: クラウド会計ソフト「Account Pro」]
+- ターゲット層: [例: 中小企業経営者、新規事業担当者]
+- 主な機能: [例: 自動仕訳、経営ダッシュボード、銀行連携]
+- 導入障壁：よくある懸念点: [例: 他システムからのデータ移行、操作性]
+- 公開先: [例: Webサイト、メール、チャットbot]
+
+## 要件
+1. 質問は顧客の疑問・懸念から導出（「本当に簡単？」など、素朴な質問）
+2. 回答は：
+   - 簡潔（1-3段落、150-300字）
+   - 具体的（機能名・費用・期間を含む）
+   - 行動喚起（次のステップを示唆）
+3. カテゴリ分け: 【料金】【機能】【導入】【サポート】など
+4. カテゴリあたり3-5問を想定
+5. 分かりやすさ：専門用語は避ける、または注釈を付ける
+
+## 出力形式
+---
+## 【料金】
+### Q1. いくらかかるのですか？
+[回答]
+
+### Q2. 無料トライアルはありますか？
+[回答]
+
+## 【機能】
+### Q3. 他の会計ソフトから乗り換えられますか？
+[回答]
+
+[以下同様]
+---
+
+全7カテゴリで計30問のFAQを作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 08 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">08</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">CS</div>
+            <div class="prompt-title">クレーム対応メール作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>CS担当者・カスタマーサポート・営業管理職</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>顧客の怒りを鎮め、信頼を回復させるメールを効率よく作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># クレーム対応メール作成プロンプト
+
+あなたはカスタマーサポートの専門家です。
+以下のクレーム内容に対し、顧客満足度を高める対応メールを作成してください。
+
+## 入力情報
+- 顧客名: [例: 田中様]
+- クレーム内容: [例: 納期が遅れた、製品が破損していた、説明と異なる]
+- クレームレベル: [例: 通常 / 中程度 / 重大]
+- 企業側の原因: [例: 我社のミス / 顧客の誤解 / 双方の原因]
+- 解決案: [例: 返金、代替品発送、サービス無料延長]
+- 発信者の肩書: [例: カスタマーサポート部長]
+
+## 要件
+1. 開始5行: 謝罪 + 顧客の気持ちへの共感
+2. 中盤: 原因分析と説明（透明性を示す）
+3. 解決案: 具体的・誠実・顧客ファースト
+4. クロージング: 信頼回復へのコミットメント + 連絡窓口
+5. トーン：誠実で、過度に卑下せず
+6. 長さ：300-400字
+
+## 対応のポイント
+- 顧客の非難を受け止める姿勢
+- 企業の対応にかかる時間や手続きを明示
+- 「今後このようなことが起きないように〜」と予防策を示唆
+
+## 出力形式
+---
+【宛先】
+[顧客名]様
+
+【件名】
+[簡潔で、謝罪と解決案を示す件名（例: 「【重要】ご指摘いただいた件の対応について」）]
+
+【本文】
+[メール本文]
+
+【署名】
+[氏名・肩書・連絡先]
+---
+
+上記フォーマットで、顧客満足度を高めるクレーム対応メールを作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 09 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">09</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">経営企画</div>
+            <div class="prompt-title">エグゼクティブサマリー作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>経営企画・経営幹部・プロジェクトマネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>複雑な資料を1ページの意思決定資料に整理</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># エグゼクティブサマリー作成プロンプト
+
+あなたは経営分析スペシャリストです。
+以下の長い資料を、経営層が1分で判断できるサマリーに変換してください。
+
+## 入力情報
+- テーマ: [例: 新事業投資案、市場分析、組織改革提案]
+- 対象読者: [例: CEO・CFO、経営会議]
+- 資料全文: [ここに長い資料全文を貼り付ける]
+
+## 出力要件
+1. 1ページ分量（A4用紙1枚、図表2-3個）
+2. 構成：
+   - 【課題】：背景と問題定義（1段落）
+   - 【分析】：市場データ・競合分析等の根拠（2段落）
+   - 【提案】：具体的なアクション（3段落）
+   - 【効果】：期待される成果・ROI（1段落）
+   - 【リスク】：想定される課題と対策（1段落）
+   - 【決断】：意思決定に必要な情報（最終1段落）
+
+3. 表現：
+   - 数字・パーセンテージを活用
+   - 専門用語は避けるか、注釈を付ける
+   - アクティブボイス（「〜される」ではなく「〜する」）
+   - 結論ファースト（なぜ？→何を？の順）
+
+## 出力形式
+---
+## エグゼクティブサマリー
+
+### 課題
+[1段落、背景と問題点]
+
+### 分析
+[2段落、根拠となるデータ・事実]
+
+### 提案
+[3段落、具体的なアクション・期間・責任者]
+
+### 期待効果
+- [KPI 1]
+- [KPI 2]
+- [ROI]
+
+### リスク・対策
+[想定される課題と対策]
+
+### 意思決定ポイント
+[経営層が判断するために必要な選択肢・条件]
+
+---
+
+上記フォーマットでエグゼクティブサマリーを作成してください。</pre>
+        </div>
+      </div>
+
+      <!-- Prompt 10 -->
+      <div class="prompt-card">
+        <div class="prompt-header">
+          <div class="prompt-num">10</div>
+          <div class="prompt-meta">
+            <div class="prompt-category">HR</div>
+            <div class="prompt-title">採用面接質問リスト作成</div>
+          </div>
+          <div class="prompt-toggle">▼ プロンプトを見る</div>
+        </div>
+        <div class="prompt-body">
+          <div class="prompt-info">
+            <div>
+              <dt>対象ユーザー</dt>
+              <dd>採用担当者・採用面接官・人事マネージャー</dd>
+            </div>
+            <div>
+              <dt>目的</dt>
+              <dd>職務経歴書からは分からない本質的なスキル・文化適合を見極める質問を作成</dd>
+            </div>
+          </div>
+          <button class="copy-btn">📋 プロンプトをコピー</button>
+          <pre># 採用面接質問リスト作成プロンプト
+
+あなたは採用面接のスペシャリストです。
+以下の職種・求める人物像に基づき、優秀な人材を見極める面接質問を作成してください。
+
+## 入力情報
+- 職種: [例: マーケティングマネージャー]
+- 必須スキル: [例: デジタルマーケティング、データ分析]
+- 求める人物像: [例: 主体性が高い、変化への適応力]
+- 企業文化: [例: スタートアップ的、顧客志向]
+- 面接ラウンド: [例: 1次（適性面接）、2次（スキル面接）、3次（経営陣面接）]
+- 注意点: [例: 前職での退職理由、キャリアのギャップ]
+
+## 質問構造（レベル別）
+### 【Lv1】基本的なバックグラウンド質問（5問）
+例: 職務経歴書の確認、キャリアの流れ
+
+### 【Lv2】スキル検証質問（8問）
+例: 具体的なプロジェクト事例、問題解決能力
+
+### 【Lv3】行動様式・適性質問（7問）
+例: STAR法（Situation, Task, Action, Result）で、本質的な判断基準・価値観を引き出す
+
+### 【Lv4】文化適合質問（5問）
+例: 企業文化への理解度、価値観の一致度
+
+## 要件
+1. 各質問は「なぜこの質問をするのか？」という評価軸を明記
+2. 「いい答え」の特徴を記載（面接官がスコアリングできるように）
+3. 本人の回答から、さらに掘り下げる「プローブ質問」も1-2個含める
+4. 法的にNGな質問は避ける（年齢・婚姻状況・家族構成など）
+5. オープンエンドな質問を活用（「はい/いいえ」では答えられない質問）
+
+## 出力形式
+---
+## 【1次面接】基本的なバックグラウンド
+
+### Q1. [質問内容]
+- **評価軸**: [何を見ているか]
+- **いい答え**: [具体的な例]
+- **プローブ**: [掘り下げ質問]
+
+[以下同様で、全25問]
+
+---
+
+全25問の面接質問リストを作成してください。</pre>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Custom CTA -->
+  <section class="custom-cta">
+    <div class="container">
+      <h2>あなたの業務に合わせたプロンプトを制作します</h2>
+      <p>業界・職種に特化した高性能なプロンプトで、さらなる業務効率化を実現</p>
+      <div class="pricing-info">
+        1本 ¥5,000〜 / 10本セット ¥50,000〜（ハンドメイドカスタマイズ版）
+      </div>
+      <a href="mailto:koya@irohani.tech" class="btn-contact">📧 お問い合わせ（メール）</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 業務効率化プロンプトライブラリ | 制作: koya@irohani.tech</p>
+    <p>ChatGPT / Claude は OpenAI / Anthropic の商標です</p>
+  </footer>
+
+  <script>
+    // プロンプトカード展開
+    document.querySelectorAll('.prompt-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        body.classList.toggle('open');
+        const toggle = header.querySelector('.prompt-toggle');
+        toggle.textContent = body.classList.contains('open') ? '▲ 閉じる' : '▼ プロンプトを見る';
+      });
+    });
+
+    // コピーボタン
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const pre = btn.nextElementSibling;
+        navigator.clipboard.writeText(pre.textContent).then(() => {
+          btn.textContent = '✅ コピー完了!';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = '📋 プロンプトをコピー';
+            btn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
