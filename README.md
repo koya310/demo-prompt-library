@@ -116,7 +116,7 @@ vercel --yes --prod
 - **1本**: ¥5,000〜
 - **10本セット**: ¥50,000〜
 
-📧 お問い合わせ: koya@irohani.tech
+📧 お問い合わせ: support@irohani.tech
 
 ## 更新履歴
 
@@ -131,5 +131,5 @@ MIT License - 詳細は LICENSE ファイルを参照
 
 ---
 
-**制作者**: koya@irohani.tech  
+**制作者**: support@irohani.tech  
 **最終更新**: 2025-02-24
